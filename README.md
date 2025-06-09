@@ -6,3 +6,4 @@
 	<h2>##&nbsp; 4.1. Backend & Blade-template</h2>
 	<h2>##&nbsp; 4.2. Синтаксис Blade-directive</h2>
 	<h2>## &nbsp 4.3. Редактирование шаблона Админ панели</h2>
+	<h2>## &nbsp 4.4. Выход из Админ панели</h2>

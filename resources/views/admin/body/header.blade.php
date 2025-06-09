@@ -48,7 +48,7 @@
                     <a class="dropdown-item" href="#"><i class="ri-wallet-2-line align-middle me-1"></i> Баланс</a>
                     <a class="dropdown-item d-block" href="#"><i class="ri-settings-2-line align-middle me-1"></i>Настройки</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item text-danger" href="#"><i class="ri-shut-down-line align-middle me-1 text-danger"></i> Выход</a>
+                    <a class="dropdown-item text-danger" href="{{ route('admin.logout') }}"><i class="ri-shut-down-line align-middle me-1 text-danger"></i> Выход</a>
                 </div>
             </div>
         </div>

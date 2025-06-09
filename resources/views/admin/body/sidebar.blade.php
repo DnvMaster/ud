@@ -51,11 +51,11 @@
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="ri-account-circle-line"></i>
-                        <span>Authentication</span>
+                        <span>Авторизация</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="auth-login.html">Login</a></li>
-                        <li><a href="auth-register.html">Register</a></li>
+                        <li><a href="{{ route('login') }}">Логин</a></li>
+                        <li><a href="{{ route('register') }}">Регистрация</a></li>
                     </ul>
                 </li>
                 <li>
