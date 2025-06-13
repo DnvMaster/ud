@@ -44,7 +44,7 @@
                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end">
-                    <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Профиль</a>
+                    <a class="dropdown-item" href="{{ route('admin.profile') }}"><i class="ri-user-line align-middle me-1"></i> Профиль</a>
                     <a class="dropdown-item" href="#"><i class="ri-wallet-2-line align-middle me-1"></i> Баланс</a>
                     <a class="dropdown-item d-block" href="#"><i class="ri-settings-2-line align-middle me-1"></i>Настройки</a>
                     <div class="dropdown-divider"></div>
