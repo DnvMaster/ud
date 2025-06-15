@@ -28,7 +28,7 @@
             				<h4 class="card-title">Имя: {{ $adminData->name }}</h4>
             				<h4 class="card-title">Е-мэйл: {{ $adminData->email }}</h4>
             				<hr>
-            				<a class="btn btn-outline-success" href="">Изменить профиль</a>
+            				<a class="btn btn-outline-success" href="{{ route('admin.edit')}}">Изменить профиль</a>
             			</div>
             		</div>
             	</div>
