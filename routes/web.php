@@ -15,6 +15,7 @@ Route::get('/dashboard', function () {
 Route::controller(AdminController::class)->group(function() {
     Route::get('/admin/profile', 'profile')->name('admin.profile');
     Route::get('/admin/edit','edit')->name('admin.edit');
+    Route::post('/admin/store','store')->name('admin.store');
     Route::get('/admin/logout', 'destroy')->name('admin.logout');
 });
 

@@ -8,7 +8,7 @@
         			<div class="card">
         				<div class="card-body">
         					<h4 class="card-title">Редактировать профиль</h4>
-        					<form action="">
+        					<form action="{{ route('admin.store') }}" method="post" enctype="multipart/form-data">
         						@csrf
 
         						<div class="row mb-3">
@@ -21,14 +21,14 @@
         						<div class="row mb-3">
         							<label for="example-text-input" class="col-sm-2 col-form-label">Логин</label>
         							<div class="col-sm-9">
-        								<input name="name" class="form-control" type="text" value="{{ $editData->username }}" id="example-text-input">
+        								<input name="username" class="form-control" type="text" value="{{ $editData->username }}" id="example-text-input">
         							</div>
         						</div>
 
         						<div class="row mb-3">
         							<label for="example-text-input" class="col-sm-2 col-form-label">Эл. почта</label>
         							<div class="col-sm-9">
-        								<input name="name" class="form-control" type="text" value="{{ $editData->email }}" id="example-text-input">
+        								<input name="email" class="form-control" type="text" value="{{ $editData->email }}" id="example-text-input">
         							</div>
         						</div>
 
