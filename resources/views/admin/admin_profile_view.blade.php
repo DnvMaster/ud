@@ -9,8 +9,8 @@
                         <h4 class="mb-sm-0">ПАНЕЛЬ УПРАВЛЕНИЯ</h4>
 						<div class="page-title-right">
                             <ol class="breadcrumb m-0">
-                                <li class="breadcrumb-item"><a href="{{ route('admin.profile') }}">DnvMaster</a></li>
-                                <li class="breadcrumb-item active">Профиль</li>
+                                <li class="breadcrumb-item"><a href="{{ route('admin.profile') }}">Профиль</a></li>
+                                <li class="breadcrumb-item active">Пользователи</li>
                             </ol>
                         </div>
                     </div>
@@ -21,7 +21,7 @@
             	<div class="col-lg-6">
             		<div class="card">
             			<br>
-            			<img class="rounded-circle avatar-xl" src="{{ asset('backend/images/small/img-5.jpg') }}" alt="Img-5">
+            			<img class="rounded-circle avatar-xl" src="{{ (!empty($adminData->profile_image)) ? url('upload/admin_images/'.$adminData->profile_image) : url('upload/no_image.jpg') }}" alt="Image-profile">
             			<div class="card-body">
             				<h4 class="card-title">Логин: {{ $adminData->username }}</h4>
             				<hr>
