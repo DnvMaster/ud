@@ -11,6 +11,7 @@
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="{{ route('admin.profile') }}">Профиль</a></li>
                         <li><a href="{{ route('admin.edit') }}">Редактирование</a></li>
+                        <li><a href="{{ route('change.password') }}">Смена пароля</a></li>
                     </ul>
                 </li>
             </ul>
