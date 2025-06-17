@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\SliderController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -19,6 +20,10 @@ Route::controller(AdminController::class)->group(function() {
     Route::get('/change/password','changePassword')->name('change.password');
     Route::get('/password/update','updatePassword')->name('update.password');
     Route::get('/admin/logout', 'destroy')->name('admin.logout');
+});
+
+Route::controller(SliderController::class)->group(function() {
+    Route::get('/slider', 'slider')->name('slider');
 });
 
 /*Route::middleware('auth')->group(function () {
