@@ -15,9 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('title')->nullable(); 
             $table->string('short_title')->nullable(); 
-            $table->string('slide')->nullable(); 
+            $table->string('slider')->nullable(); 
             $table->string('video_url');
             $table->timestamps();
+
+            
         });
     }
 

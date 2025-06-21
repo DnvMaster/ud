@@ -23,9 +23,10 @@
         			<div class="card">
         				<div class="card-body">
         					<h4 class="card-title">Редактирование слайдера</h4>
-        					<form action="#" method="post" enctype="multipart/form-data">
+        					<form action="{{ route('update.slider') }}" method="post" enctype="multipart/form-data">
         						@csrf
 
+                                <input type="hidden" name="id" value="{{ $slider->id }}">
         						<div class="row mb-3">
         							<label for="example-text-input" class="col-sm-2 col-form-label">Заголовок</label>
         							<div class="col-sm-9">
@@ -50,14 +51,17 @@
         						<div class="row mb-3">
         							<label for="example-text-input" class="col-sm-2 col-form-label"> Изображение слайдера</label>
         							<div class="col-sm-9">
-        								<input name="slide" class="form-control" type="file" id="image">
+        								<input name="slider" class="form-control" type="file" id="image">
         							</div>
         						</div>
 
         						<div class="row mb-3">
         							<label for="example-text-input" class="col-sm-2 col-form-label"> </label>
         							<div class="col-sm-9">
-        								<img id="showImage" class="rounded avatar-lg" src="{{ (!empty($slider->slide)) ? url('upload/slider/'.$slider->slide) : url('upload/no_image.jpg') }}" alt="Slider">
+
+<img id="showImage" class="rounded avatar-lg" src="{{ (!empty($slider->slider)) ? url('upload/slider'. $slider->slider) : url('upload/no_image.jpg') }}"
+                                    alt="Slider">
+
         							</div>
         						</div>
         						

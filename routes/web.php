@@ -24,6 +24,7 @@ Route::controller(AdminController::class)->group(function() {
 
 Route::controller(SliderController::class)->group(function() {
     Route::get('/slider', 'slider')->name('slider');
+    Route::post('/update/slider', 'updateSlider')->name('update.slider');
 });
 
 /*Route::middleware('auth')->group(function () {
