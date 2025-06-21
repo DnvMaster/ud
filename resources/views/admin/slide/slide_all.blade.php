@@ -58,10 +58,8 @@
         						<div class="row mb-3">
         							<label for="example-text-input" class="col-sm-2 col-form-label"> </label>
         							<div class="col-sm-9">
-
-<img id="showImage" class="rounded avatar-lg" src="{{ (!empty($slider->slider)) ? url('upload/slider'. $slider->slider) : url('upload/no_image.jpg') }}"
+                                        <img id="showImage" class="rounded avatar-lg" src="{{ (!empty($slider->slider)) ? url('upload/slider/'. $slider->slider) : url('upload/no_image.jpg') }}"
                                     alt="Slider">
-
         							</div>
         						</div>
         						

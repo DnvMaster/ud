@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\SliderController;
+use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -27,10 +28,8 @@ Route::controller(SliderController::class)->group(function() {
     Route::post('/update/slider', 'updateSlider')->name('update.slider');
 });
 
-/*Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});*/
+Route::controller(AboutController::class)->group(function() {
+    Route::get('/about','about')->name('about.page');
+});
 
 require __DIR__.'/auth.php';
