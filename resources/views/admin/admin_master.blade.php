@@ -64,5 +64,7 @@
                }
             @endif
         </script>
+        <script src="{{ asset('backend/libs/tinymce/tinymce.min.js') }}"></script>
+        <script src="{{ asset('backend/js/pages/form-editor.init.js') }}"></script>
     </body>
 </html>
