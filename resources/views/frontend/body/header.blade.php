@@ -1,25 +1,25 @@
 <div id="sticky-header" class="menu__area transparent-header">
-                <div class="container custom-container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="mobile__nav__toggler"><i class="fas fa-bars"></i></div>
-                            <div class="menu__wrap">
-                                <nav class="menu__nav">
-                                    <div class="logo">
-                                        <a href="{{ url('/')}}" class="logo__black"><img src="{{ asset('frontend/img/logo/logo_black.png') }}" alt="Logo"></a>
-                                        <a href="{{ url('/')}}" class="logo__white"><img src="{{ asset('frontend/img/logo/logo_white.png') }}" alt="Logo"></a>
-                                    </div>
-                                    <div class="navbar__wrap main__menu d-none d-xl-flex">
-                                        <ul class="navigation">
-                                            <li class="active"><a href="index.html">Home</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="services-details.html">Services</a></li>
-                                            <li class="menu-item-has-children"><a href="#">Portfolio</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                                    <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                                                </ul>
-                                            </li>
+    <div class="container custom-container">
+        <div class="row">
+            <div class="col-12">
+                <div class="mobile__nav__toggler"><i class="fas fa-bars"></i></div>
+                    <div class="menu__wrap">
+                        <nav class="menu__nav">
+                            <div class="logo">
+                                <a href="{{ url('/')}}" class="logo__black"><img src="{{ asset('frontend/img/logo/logo_black.png') }}" alt="Logo"></a>
+                                <a href="{{ url('/')}}" class="logo__white"><img src="{{ asset('frontend/img/logo/logo_white.png') }}" alt="Logo"></a>
+                            </div>
+                            <div class="navbar__wrap main__menu d-none d-xl-flex">
+                                <ul class="navigation">
+                                    <li class="active"><a href="{{ url('/')}}">Главная</a></li>
+                                    <li><a href="{{ route('home.about') }}">О нас</a></li>
+                                    <li><a href="services-details.html">Services</a></li>
+                                    <li class="menu-item-has-children"><a href="#">Portfolio</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="portfolio.html">Portfolio</a></li>
+                                        <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                                    </ul>
+                                </li>
                                             <li class="menu-item-has-children"><a href="#">Our Blog</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="blog.html">Our News</a></li>

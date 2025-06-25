@@ -14,7 +14,7 @@ class AboutController extends Controller
         return view('admin.admin_about', compact('about'));
     }
 
-     public function aboutUpdate(Request $request)
+    public function aboutUpdate(Request $request)
     {
         $about_id = $request->id;
         if ($request->file('about_image')) {
@@ -48,6 +48,12 @@ class AboutController extends Controller
             );
             return redirect()->back()->with($notification);
         }
+    }
+
+    public function homeAbout()
+    {
+        $about = About::find(1);
+        return view('frontend.about_page',compact('about'));
     }
 
 }
