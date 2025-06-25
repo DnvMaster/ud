@@ -16,14 +16,14 @@ class SliderController extends Controller
 
     public function updateSlider(Request $request)
     {
-        $slide_id = $request->id;
+        $slider_id = $request->id;
         if ($request->file('slider')) {
             $image = $request->file('slider');
             $name_gen = hexdec(uniqid()).'.'.$image->getClientOriginalExtension();
             Image::read($image)->resize(636,852)->save('upload/slider/'.$name_gen);
             $save_url = 'upload/slider/'.$name_gen;
 
-            Slider::findOrFail($slide_id)->update([
+            Slider::findOrFail($slider_id)->update([
                 'title'       => $request->title,
                 'short_title' => $request->short_title,
                 'video_url'   => $request->video_url,
